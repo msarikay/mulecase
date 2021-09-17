@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "28067e7e-0522-4aa2-b165-866c7e428299",
+		"name": "ms",
+		"description": "ms mulesoft project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/ms/Orders?productOrder",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ms/Orders?productOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms",
+						"Orders"
+					],
+					"query": [
+						{
+							"key": "productOrder",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ms/Orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Header\": {\n        \"productOrder\" : 1\n    },\n    \"Items\":[\n        {\n            \"productNumber\": 1,\n            \"productCount\": 1\n        },\n        {\n            \"productNumber\": 2,\n            \"productCount\": 2\n        }\n\n    ]\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ms/Orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ms/?productOrder",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ms/?productOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms",
+						""
+					],
+					"query": [
+						{
+							"key": "productOrder",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
